@@ -1,0 +1,11 @@
+<span>
+    mobileId: {{mobileId}}<br>
+    mobileName: {{mobileName}}<br>
+    mobileCost: {{mobileCost}}<br>
+    <ng-container *ngIf="mobileType == 'Smart'">
+        <app-smartphone [mobileType]="mobileType"></app-smartphone>
+    </ng-container>
+    <ng-container *ngIf="mobileType == 'Basic'">
+        <app-basicphone [mobileType]="mobileType"></app-basicphone>
+    </ng-container>
+</span>
